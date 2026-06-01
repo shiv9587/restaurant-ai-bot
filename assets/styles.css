@@ -1,0 +1,310 @@
+/* Dark Theme Styling for Restaurant AI Assistant */
+
+/* Main background and text colors */
+:root {
+    --primary-color: #ff6b35;
+    --secondary-color: #004e89;
+    --dark-bg: #1a1a2e;
+    --light-text: #eaeaea;
+    --accent-color: #f7b801;
+    --success-color: #00d4aa;
+    --warning-color: #ff6b6b;
+}
+
+/* Overall page styling */
+body {
+    background-color: #1a1a2e !important;
+    color: #eaeaea !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main app container */
+.main {
+    background-color: #1a1a2e !important;
+}
+
+/* Streamlit sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #16213e !important;
+    border-right: 2px solid #ff6b35 !important;
+}
+
+/* Sidebar text */
+section[data-testid="stSidebar"] > div {
+    background-color: #16213e !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #eaeaea !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #ff6b35 !important;
+    font-weight: 600;
+}
+
+/* Chat messages styling */
+.chat-message {
+    display: flex;
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.user-message {
+    background-color: #004e89 !important;
+    border-left: 4px solid #ff6b35 !important;
+}
+
+.assistant-message {
+    background-color: #0f3460 !important;
+    border-left: 4px solid #f7b801 !important;
+}
+
+/* Text in messages */
+.chat-message p, .chat-message div {
+    color: #eaeaea !important;
+}
+
+/* Buttons */
+button {
+    background-color: #ff6b35 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+button:hover {
+    background-color: #e55a2b !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3) !important;
+}
+
+button:active {
+    transform: translateY(0) !important;
+}
+
+/* Input fields */
+input, textarea {
+    background-color: #0f3460 !important;
+    color: #eaeaea !important;
+    border: 1px solid #ff6b35 !important;
+    border-radius: 0.5rem !important;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999 !important;
+}
+
+input:focus, textarea:focus {
+    background-color: #16213e !important;
+    border-color: #f7b801 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(247, 184, 1, 0.2) !important;
+}
+
+/* Select boxes and dropdowns */
+select {
+    background-color: #0f3460 !important;
+    color: #eaeaea !important;
+    border: 1px solid #ff6b35 !important;
+    border-radius: 0.5rem !important;
+}
+
+/* Cards and containers */
+.card {
+    background-color: #16213e !important;
+    border: 1px solid #ff6b35 !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
+    color: #eaeaea !important;
+}
+
+/* Success messages */
+.success {
+    background-color: rgba(0, 212, 170, 0.2) !important;
+    border-left: 4px solid #00d4aa !important;
+    padding: 1rem !important;
+    border-radius: 0.5rem !important;
+    color: #00d4aa !important;
+}
+
+/* Warning messages */
+.warning {
+    background-color: rgba(255, 107, 107, 0.2) !important;
+    border-left: 4px solid #ff6b6b !important;
+    padding: 1rem !important;
+    border-radius: 0.5rem !important;
+    color: #ff6b6b !important;
+}
+
+/* Info messages */
+.info {
+    background-color: rgba(4, 78, 137, 0.2) !important;
+    border-left: 4px solid #004e89 !important;
+    padding: 1rem !important;
+    border-radius: 0.5rem !important;
+    color: #87ceeb !important;
+}
+
+/* Metric displays */
+.metric {
+    background-color: #16213e !important;
+    border: 1px solid #ff6b35 !important;
+    border-radius: 0.5rem !important;
+    padding: 1.5rem !important;
+    text-align: center !important;
+}
+
+.metric-value {
+    color: #f7b801 !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+}
+
+.metric-label {
+    color: #999 !important;
+    font-size: 0.9rem !important;
+    margin-top: 0.5rem !important;
+}
+
+/* Tables */
+table {
+    color: #eaeaea !important;
+    border-collapse: collapse !important;
+}
+
+table th {
+    background-color: #ff6b35 !important;
+    color: white !important;
+    padding: 1rem !important;
+}
+
+table td {
+    border-bottom: 1px solid #16213e !important;
+    padding: 0.75rem 1rem !important;
+    background-color: #0f3460 !important;
+}
+
+table tr:hover {
+    background-color: #16213e !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f3460;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff6b35;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e55a2b;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #16213e !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #eaeaea !important;
+    border-bottom: 2px solid transparent !important;
+}
+
+.stTabs [aria-selected="true"] {
+    border-bottom-color: #ff6b35 !important;
+}
+
+.stTabs [data-baseweb="tab-content"] {
+    background-color: #1a1a2e !important;
+}
+
+/* Expanders */
+.streamlit-expanderHeader {
+    background-color: #16213e !important;
+    border: 1px solid #ff6b35 !important;
+}
+
+.streamlit-expanderHeader:hover {
+    background-color: #0f3460 !important;
+}
+
+/* Rating stars styling */
+.rating {
+    color: #f7b801 !important;
+    font-size: 1.2rem !important;
+    margin: 0.25rem 0 !important;
+}
+
+/* Badge styling */
+.badge {
+    display: inline-block;
+    background-color: #ff6b35 !important;
+    color: white !important;
+    padding: 0.25rem 0.75rem !important;
+    border-radius: 1rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    margin: 0.25rem !important;
+}
+
+/* Price display */
+.price {
+    color: #00d4aa !important;
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+}
+
+/* Category tags */
+.category-tag {
+    background-color: #004e89 !important;
+    color: #f7b801 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0.5rem !important;
+    display: inline-block !important;
+    margin: 0.25rem !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .chat-message {
+        padding: 0.75rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .metric {
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Animation for loading */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+/* Transition effects */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
