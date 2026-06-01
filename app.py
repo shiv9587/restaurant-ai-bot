@@ -33,10 +33,21 @@ st.set_page_config(
 # Load custom CSS
 def load_css():
     """Load custom CSS styling."""
-    css_path = Path("assets/styles.css")
-    if css_path.exists():
-        with open(css_path) as f:
-            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    try:
+        # Try multiple path possibilities
+        css_paths = [
+            Path("assets/styles.css"),
+            Path(__file__).parent / "assets/styles.css",
+        ]
+        
+        for css_path in css_paths:
+            if css_path.exists():
+                with open(css_path) as f:
+                    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+                return
+    except Exception as e:
+        # Silently fail - CSS is optional
+        pass
 
 load_css()
 
@@ -49,16 +60,17 @@ def initialize_session_state():
     if "ai_assistant" not in st.session_state:
         try:
             st.session_state.ai_assistant = AIAssistant()
-        except ValueError as e:
+        except Exception as e:
             st.session_state.ai_assistant = None
-            st.error(f"⚠️ {str(e)}")
+            # Don't show error immediately, show in main
+            st.session_state.ai_error = str(e)
 
     if "recommender" not in st.session_state:
         try:
             st.session_state.recommender = FoodRecommender("data/menu.csv")
-        except FileNotFoundError:
-            st.error("❌ Menu file not found at data/menu.csv")
+        except Exception as e:
             st.session_state.recommender = None
+            st.session_state.recommender_error = str(e)
 
     if "context_manager" not in st.session_state:
         st.session_state.context_manager = ContextManager()
