@@ -1,0 +1,25 @@
+name,category,type,spicy_level,price,rating
+Paneer Tikka,Starter,Veg,Medium,250,4.6
+Chicken Tikka,Starter,Non-Veg,Medium,300,4.7
+Samosa,Starter,Veg,Medium,80,4.4
+Vegetable Spring Roll,Starter,Veg,Mild,100,4.3
+Chilli Garlic Noodles,Starter,Veg,Spicy,150,4.5
+Butter Chicken,Main Course,Non-Veg,Medium,350,4.8
+Paneer Butter Masala,Main Course,Veg,Mild,280,4.7
+Tandoori Chicken,Main Course,Non-Veg,Medium,320,4.6
+Chicken Biryani,Main Course,Non-Veg,Medium,280,4.5
+Vegetable Biryani,Main Course,Veg,Mild,220,4.4
+Dal Makhani,Main Course,Veg,Mild,200,4.5
+Lamb Curry,Main Course,Non-Veg,Spicy,380,4.7
+Fish Curry,Main Course,Non-Veg,Medium,360,4.6
+Chole Bhature,Main Course,Veg,Medium,180,4.3
+Naan,Bread,Veg,Mild,50,4.4
+Garlic Naan,Bread,Veg,Mild,60,4.5
+Butter Paratha,Bread,Veg,Mild,70,4.4
+Rogan Josh,Main Course,Non-Veg,Medium,340,4.6
+Aloo Gobi,Main Course,Veg,Mild,150,4.3
+Gulab Jamun,Dessert,Veg,Mild,120,4.7
+Kheer,Dessert,Veg,Mild,100,4.5
+Rasmalai,Dessert,Veg,Mild,140,4.6
+Mango Lassi,Beverage,Veg,Mild,80,4.4
+Masala Chai,Beverage,Veg,Mild,40,4.3

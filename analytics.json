@@ -1,0 +1,21 @@
+{
+  "total_chats": 13,
+  "total_recommendations": 5,
+  "popular_items": {
+    "Butter Chicken": 1,
+    "Chicken Tikka": 1,
+    "Paneer Tikka": 1,
+    "Tandoori Chicken": 1,
+    "Rogan Josh": 1
+  },
+  "user_preferences": {
+    "veg": 0,
+    "non_veg": 0,
+    "spicy_levels": {
+      "Mild": 0,
+      "Medium": 0,
+      "Spicy": 0
+    }
+  },
+  "daily_stats": {}
+}
