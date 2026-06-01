@@ -2,12 +2,20 @@
 Restaurant AI Assistant Chatbot - Main Application
 A production-ready Streamlit chatbot with AI-powered recommendations and chat interface.
 """
+import os
+import sys
+from pathlib import Path
+from datetime import datetime
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent))
+
+# Load environment variables
+from dotenv import load_dotenv
+load_dotenv(override=True)
 
 import streamlit as st
 import pandas as pd
-from datetime import datetime
-import os
-from pathlib import Path
 
 # Import custom modules
 from utils.ai_helper import AIAssistant, ContextManager
